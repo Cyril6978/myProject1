@@ -1,0 +1,42 @@
+/* index.html */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+h1{
+    font-family: 'Nerko One', cursive;
+    font-size: 96px;
+    color: rgba(56, 88, 103, 1);
+    text-align: center;  
+    margin-top: 100px;
+}
+
+.index {
+    background-image: url(images/accueil/banniere.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;   
+}
+
+nav ul {
+    display: flex;
+    font-family: 'Nerko One', cursive;
+    font-size: 20px;
+    color: rgba(56, 88, 103, 1);
+    list-style-image: url(images/puce.png);
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+nav ul li:hover {
+    background-color: rgba(108, 94, 235, 0.43);
+    color: rgb(66, 68, 69);
+    border-radius: 40%;
+  }
+
+.images_accueil {
+    display: flex;
+    height: 250px;
+    justify-content: center;
+}
