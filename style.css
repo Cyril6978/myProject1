@@ -1,42 +1,67 @@
-/* index.html */
-*{
+* {
     margin: 0px;
     padding: 0px;
+    text-decoration: none;
+
 }
 
 
-h1{
+h1 {
     font-family: 'Nerko One', cursive;
     font-size: 96px;
     color: rgba(56, 88, 103, 1);
-    text-align: center;  
-    margin-top: 100px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
+
 
 .index {
     background-image: url(images/accueil/banniere.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;   
+    background-size: 100%;
 }
 
 nav ul {
     display: flex;
     font-family: 'Nerko One', cursive;
-    font-size: 20px;
-    color: rgba(56, 88, 103, 1);
+    font-size: 30px;
+    color: black;
     list-style-image: url(images/puce.png);
     justify-content: space-around;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    padding-top: 10px;
 }
 
 nav ul li:hover {
     background-color: rgba(108, 94, 235, 0.43);
     color: rgb(66, 68, 69);
     border-radius: 40%;
-  }
+}
 
 .images_accueil {
     display: flex;
-    height: 250px;
     justify-content: center;
+    padding-top: 10px;
 }
+
+.insta {
+    padding-top: 60px;
+    margin-left: 50%;
+}
+
+.img1 {
+    display: flex;
+    padding-top: 100px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+    list-style-image: url(images/puce.png);
+    font-size: 25px;
+}
+
+.banniere1 img {
+    width: 100%;
+}
+
