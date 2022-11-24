@@ -15,6 +15,14 @@ h1 {
     margin-bottom: 20px;
 }
 
+h2 {
+    font-family: 'Nerko One', cursive;
+    font-size: 50px;
+    color: rgba(56, 88, 103, 1);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
 
 .index {
     background-image: url(images/accueil/banniere.jpg);
@@ -65,3 +73,12 @@ nav ul li:hover {
     width: 100%;
 }
 
+.chronologie {
+    display: flex;
+    justify-content: center;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+}
