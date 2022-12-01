@@ -34,7 +34,7 @@ h2 {
    /* version standard actuelle*/
 }
 
-nav ul {
+.menu ul {
     display: flex;
     font-family: 'Nerko One', cursive;
     font-size: 25px;
@@ -46,15 +46,23 @@ nav ul {
 }
 
 nav ul li:hover {
+    display: flex;
     background-color: rgb(235, 162, 229);
     color: rgba(56, 88, 103, 1);
     border-radius: 40%;
 }
 
+
 .images_accueil {
-    display: flex;
     justify-content: center;
-    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    margin: 10% 10% 1% 10%;
+
+}
+.etape{
+    width: 100%;
+    height: auto;
 }
 
 .insta {
@@ -85,7 +93,7 @@ nav ul li:hover {
 }
 
 .banniere1 img {
-    width: 100%;
+    min-width: 100vw;
 }
 
 .chronologie {
@@ -118,4 +126,65 @@ nav ul li:hover {
 .imgRight a {
     margin-right: 20px;
     font-size: 30px;
+}
+
+
+.navlist_mobile {
+    list-style: none;
+    position: fixed;
+    top: -30vh;
+    left: 75%;
+    width: 20vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    background-color: rgba(56, 88, 103, 0.449);
+    margin: 3%
+}
+
+.navlist_mobile li {
+    list-style: none;
+}
+
+.nav_mobile i {
+    z-index: 999;
+    font-size: 300%;
+    display: flex;
+    justify-content: end;
+    margin-right: 10%;
+} 
+
+.navlist_mobile a {
+    color: rgb(244, 226, 209);
+    font-weight: 800;
+}
+
+.list-visible {
+    top: +20vh;
+}
+
+.icon-visible {
+    color: rgb(236, 189, 145);
+}
+
+@media screen and(min-width:1149px) {
+.menu ul {
+        list-style: none;
+    }
+}
+
+@media screen and(max-width: 750px) {
+.menu ul {
+    display: none;
+}
+.navlist_mobile {
+    display: block;
+}
+
+.nav_mobile i {
+    display: block;
+}
+    
 }
