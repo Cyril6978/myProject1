@@ -5,6 +5,70 @@
 
 }
 
+/* navigation */
+
+ .navlist_desktop ul {
+     display: flex;
+     font-family: 'Nerko One', cursive;
+     font-size: 25px;
+     color: black;
+     list-style-image: url(images/puce.png);
+     justify-content: space-around;
+     margin-bottom: 50px;
+     padding-top: 10px;
+ }
+ 
+ nav ul li:hover {
+     background-color: rgb(235, 162, 229);
+     color: rgba(56, 88, 103, 1);
+     border-radius: 40%;
+ }
+
+ .navlist_mobile {
+    list-style: none;
+    position: fixed;
+    top: -35vh;
+    left: 75%;
+    width: 25vw;
+    height: 15vh;
+    display: none;
+    font-size: 18px;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    background-color: rgba(236, 189, 145, 0.226);
+    margin: 3%
+}
+
+.navlist_mobile li {
+    list-style: none;
+}
+
+.nav_mobile i {
+    z-index: 999;
+    font-size: 300%;
+    display: flex;
+    justify-content: end;
+    margin-right: 10%;
+} 
+
+.navlist_mobile a {
+    color: rgb(56, 88, 103);
+    font-weight: 1000;
+    justify-content: center;
+}
+
+.list-visible {
+    top: +35vh;
+    margin-left: -5vw;
+}
+
+.icon-visible {
+    color: rgb(56, 88, 103);
+}
+
+
+/* title */
 
 h1 {
     font-family: 'Nerko One', cursive;
@@ -24,34 +88,18 @@ h2 {
     margin-bottom: 20px;
 }
 
-.index {
-   margin: 0;
-   padding: 0;
-   background: url(images/accueil/banniere.jpg) no-repeat center fixed;
-   -webkit-background-size: cover;
-   /* pour ancien chrome et safari*/
-   background-size: cover;   
-   /* version standard actuelle*/
-}
 
-.menu ul {
-    display: flex;
-    font-family: 'Nerko One', cursive;
-    font-size: 25px;
-    color: black;
-    list-style-image: url(images/puce.png);
-    justify-content: space-around;
-    margin-bottom: 50px;
-    padding-top: 10px;
-}
+/* pictures */
 
-nav ul li:hover {
-    display: flex;
-    background-color: rgb(235, 162, 229);
-    color: rgba(56, 88, 103, 1);
-    border-radius: 40%;
-}
-
+.Background_index {
+    margin: 0;
+    padding: 0;
+    background: url(images/accueil/banniere.jpg) no-repeat center fixed;
+    -webkit-background-size: cover;
+    /* pour ancien chrome et safari*/
+    background-size: cover;   
+    /* version standard actuelle*/
+ }
 
 .images_accueil {
     justify-content: center;
@@ -68,6 +116,11 @@ nav ul li:hover {
 .insta {
     padding-top: 60px;
     margin-left: 50%;
+}
+
+.banniere {
+    width: 100%;
+    height: auto;
 }
 
 .imgRight {
@@ -101,6 +154,11 @@ nav ul li:hover {
     justify-content: center;
 }
 
+.img_chrono {
+    width: 100%;
+    height: auto;
+}
+
 .calendrier {
     display: flex;
     justify-content: center;
@@ -113,11 +171,6 @@ nav ul li:hover {
     font-size: 30px;
 }
 
-.map {
-    display: flex;
-    justify-content: center;
-}
-
 .imgLeft a {
     margin-left: 20px;
     font-size: 30px;
@@ -128,63 +181,59 @@ nav ul li:hover {
     font-size: 30px;
 }
 
-
-.navlist_mobile {
-    list-style: none;
-    position: fixed;
-    top: -30vh;
-    left: 75%;
-    width: 20vw;
-    height: 25vh;
+/* map iframe */
+.map {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
-    background-color: rgba(56, 88, 103, 0.449);
-    margin: 3%
+    justify-content: center;
 }
 
-.navlist_mobile li {
-    list-style: none;
+.img_map {
+    width: 50vw;
+    height: 40vh;
 }
 
-.nav_mobile i {
-    z-index: 999;
-    font-size: 300%;
-    display: flex;
-    justify-content: end;
-    margin-right: 10%;
-} 
 
-.navlist_mobile a {
-    color: rgb(244, 226, 209);
-    font-weight: 800;
-}
+/* responsive */
 
-.list-visible {
-    top: +20vh;
-}
+/* Ajustement Nav pour Desktop*/
 
-.icon-visible {
-    color: rgb(236, 189, 145);
-}
-
-@media screen and(min-width:1149px) {
-.menu ul {
+@media screen and (max-width:1149px) {
+.navlist_desktop ul {
         list-style: none;
     }
 }
 
-@media screen and(max-width: 750px) {
-.menu ul {
+.nav_mobile i {
     display: none;
 }
-.navlist_mobile {
-    display: block;
+
+.navlist_mobile a {
+    display: none;
 }
 
+/* Responsive poru mobile*/
+
+@media screen and (max-width: 750px) {
+
+.navlist_desktop {
+        display: none;
+    }
+
 .nav_mobile i {
-    display: block;
+    display: flex;
 }
-    
+
+.navlist_mobile a {
+    display: flex;
 }
+
+.navlist_mobile {
+    display: flex;
+}
+
+.images_accueil {
+    margin-top: 15vh;
+}
+
+}
+
