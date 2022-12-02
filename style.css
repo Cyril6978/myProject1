@@ -108,7 +108,7 @@ h2 {
     margin: 10% 10% 1% 10%;
 
 }
-.etape{
+.etape {
     width: 100%;
     height: auto;
 }
@@ -119,10 +119,10 @@ h2 {
 }
 
 .banniere {
-    width: 100%;
+    width: 100vw;
     height: auto;
 }
-
+ 
 .imgRight {
     display: flex;
     padding-top: 100px;
@@ -201,8 +201,12 @@ h2 {
 .navlist_desktop ul {
         list-style: none;
     }
+
+.imgLeft ul, .imgRight ul {
+    list-style: none;
 }
 
+}
 .nav_mobile i {
     display: none;
 }
@@ -211,12 +215,13 @@ h2 {
     display: none;
 }
 
+
 /* Responsive poru mobile*/
 
 @media screen and (max-width: 750px) {
 
 .navlist_desktop {
-        display: none;
+    display: none;
     }
 
 .nav_mobile i {
@@ -235,5 +240,29 @@ h2 {
     margin-top: 15vh;
 }
 
+.imgRight {
+    flex-direction: column-reverse;
+    justify-content: center;
+    
 }
+
+.imgLeft {
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.imgRight_mobile {
+    width: 100%;
+    height: auto;
+}
+
+.imgLeft_mobile {
+    width: 100%;
+    height: auto;
+}
+
+}
+
+
 
