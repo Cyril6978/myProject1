@@ -4,8 +4,8 @@ console.log("connecté");
 const icon = document.querySelector(".fa-bars");
 const list = document.querySelector(".navlist_mobile");
 
-icon.addEventListener("click", function() {
-    list.classList.toggle("list-visible");
-    icon.classList.toggle("icon-visible");
-        console.log(list);
-    })
+icon.addEventListener("click", function () {
+  list.classList.toggle("list-visible");
+  icon.classList.toggle("icon-visible");
+  console.log(list);
+});
