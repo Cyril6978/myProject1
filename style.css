@@ -34,6 +34,7 @@ nav ul li:hover {
 }
 
 .navlist_mobile {
+  z-index: 999;
   list-style: none;
   position: fixed;
   transition: top 1s;
@@ -51,6 +52,7 @@ nav ul li:hover {
 }
 
 .navlist_mobile li {
+  z-index: 999;
   list-style: none;
 }
 
@@ -291,4 +293,17 @@ h2 {
     font-size: 20px;
     text-align: center;
   }
+}
+
+/*Animation chargement image scroll*/
+
+.reveal {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s cubic-bezier(0.54, 0, 0, 0.99);
 }
