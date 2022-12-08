@@ -2,6 +2,15 @@
   margin: 0px;
   padding: 0px;
   text-decoration: none;
+  text-decoration: none;
+  color: rgba(56, 88, 103, 1);
+}
+
+nav,
+.imgRight,
+.imgLeft {
+  text-decoration: none;
+  color: rgba(56, 88, 103, 1);
 }
 
 /* navigation */
@@ -15,6 +24,7 @@
   justify-content: space-around;
   margin-bottom: 50px;
   padding-top: 10px;
+  padding: 5%;
 }
 
 nav ul li:hover {
