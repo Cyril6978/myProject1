@@ -11,11 +11,11 @@ icon.addEventListener("click", function () {
 });
 
 //scroll animation opacity//
-const ratio = 0.1; //variable de ratio 10%//
+const ratio = 0.2; //variable de ratio 10%//
 const options = {
   root: null, //pas de racine, on souhaite voir à l'écran//
   rootMargin: "0px", // si on souhaite dépasser les marges pour que l'élémnet soit visible//
-  threshold: 0.1, // % du contenu decouvert pour que le contenu apparaisse - 10%//
+  threshold: 0.7, // % du contenu decouvert pour que le contenu apparaisse - 10%//
 };
 
 const visibleInvisible = function (entries, observer) {
