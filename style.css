@@ -135,7 +135,8 @@ h2 {
   height: auto;
 }
 
-.imgRight {
+.imgRight,
+.imgLeft {
   display: flex;
   padding-top: 100px;
   justify-content: space-around;
@@ -154,17 +155,6 @@ h2 {
 .imgLeft_mobile {
   border-radius: 50%;
   box-shadow: -10px 5px 5px rgba(56, 88, 103, 1);
-}
-
-.imgLeft {
-  display: flex;
-  padding-top: 100px;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 20px;
-  font-family: "Dancing Script", cursive;
-  list-style-image: url(images/puce.png);
-  font-size: 25px;
 }
 
 .banniere1 img {
@@ -237,10 +227,7 @@ h2 {
     display: none;
   }
 
-  .nav_mobile i {
-    display: flex;
-  }
-
+  .nav_mobile i,
   .navlist_mobile a {
     display: flex;
   }
@@ -269,12 +256,7 @@ h2 {
     text-align: center;
   }
 
-  .imgRight_mobile {
-    width: 90%;
-    height: auto;
-    box-shadow: none;
-  }
-
+  .imgRight_mobile,
   .imgLeft_mobile {
     width: 90%;
     height: auto;

@@ -18,7 +18,7 @@ const options = {
   threshold: 0.7, // % du contenu decouvert pour que le contenu apparaisse - 10%//
 };
 
-const visibleInvisible = function (entries, observer) {
+const visibleInvisible = (entries, observer) => {
   //constante observer possedant fonction avec 2 parametres, 1 lorsque élément visible l'autre les options
   entries.forEach(function (entry) {
     if (entry.intersectionRatio > ratio) {
