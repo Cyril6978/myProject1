@@ -89,16 +89,7 @@ h1 {
   font-size: 96px;
   color: rgba(56, 88, 103, 1);
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-h2 {
-  font-family: "Nerko One", cursive;
-  font-size: 50px;
-  color: rgba(56, 88, 103, 1);
-  text-align: center;
-  margin-top: 50px;
+  margin-top: 40px;
   margin-bottom: 20px;
 }
 
@@ -264,10 +255,6 @@ h2 {
   }
 
   h1 {
-    font-size: 55px;
-  }
-
-  h2 {
     font-size: 35px;
   }
 
